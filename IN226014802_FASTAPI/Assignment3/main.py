@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Query, Response, status
 from pydantic import BaseModel
 from typing import Optional
-
+# Assignment 3
 app = FastAPI()
 
 # Existing products
