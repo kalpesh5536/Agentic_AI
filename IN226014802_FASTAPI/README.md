@@ -5,7 +5,7 @@ Instead of jumping directly into complex systems, I started with basic APIs and 
 ________________________________________
 ⚙️ Setup
 1️⃣ Install dependencies
-pip install fastapi uvicorn
+pip install fastapi uvicorn 
 2️⃣ Activate virtual environment
 venv\Scripts\activate
 3️⃣ Run the server
