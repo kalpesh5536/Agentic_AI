@@ -2,17 +2,25 @@
 
 This project is part of my FastAPI internship where I built a backend system step by step. The goal was to understand how real-world APIs work by creating a product and order management system.
 
-I started with basic APIs and then slowly added more features like search, sorting, pagination, and order handling. Everything is built using FastAPI and uses in-memory data (no database), just to focus on logic and API design.
+I started with basic APIs and then gradually added features like search, sorting, pagination, and order handling. Everything is built using FastAPI and uses in-memory data (no database), just to focus on logic and API design.
 
 ⚙️ Setup
 
-Install required packages: pip install fastapi uvicorn
+Install required packages:
 
-Activate virtual environment: venv\Scripts\activate
+pip install fastapi uvicorn
 
-Run the server:  uvicorn main:app --reload
+Activate virtual environment:
 
+venv\Scripts\activate
 
+Run the server:
+
+uvicorn main:app --reload
+
+Open in browser:
+
+http://127.0.0.1:8000/docs
 📌 What I Built
 1. Product Management
 
@@ -30,7 +38,7 @@ Users can search products by name without worrying about uppercase/lowercase.
 
 Example:
 
-Searching "laptop" will also match "Laptop" or "LAPTOP"
+Searching "laptop" will match "Laptop" or "LAPTOP"
 
 3. Sorting
 
@@ -42,21 +50,19 @@ Sort by price (low to high)
 
 Sort by name (A to Z)
 
-Also added validation so invalid fields don’t break the API.
+Validation is added to prevent invalid sorting fields.
 
 4. Advanced Sorting (Multi-Level)
 
-I also created custom logic where:
+Custom logic:
 
 First group products by category
 
 Then sort each category by price
 
-This shows how real systems handle complex sorting.
-
 5. Pagination
 
-Instead of showing all data at once, I split it into pages.
+Data is split into pages for better performance.
 
 Example:
 
@@ -64,21 +70,17 @@ Page 1 → first 5 products
 
 Page 2 → next 5 products
 
-This is useful when data becomes large.
-
 6. Combined API (Search + Sort + Pagination)
 
-I created one API where all operations work together.
+Single API that supports multiple operations.
 
 Example:
 
-Search = "phone"
+search=phone
 
-Sort = price
+sort_by=price
 
-Page = 1
-
-This is how real backend APIs are designed.
+page=1
 
 7. Order Management System
 
@@ -86,27 +88,23 @@ Users can place orders by selecting products.
 
 Features:
 
-Check if product exists
+Validate product existence
 
 Check stock availability
 
-Calculate total price automatically
-
-Example:
-
-Order: 2 items → total price calculated
+Auto-calculate total price
 
 8. Order Search
 
-Orders can be searched by customer name (case-insensitive).
+Search orders by customer name (case-insensitive).
 
 Example:
 
-"rahul" will match "Rahul"
+"rahul" matches "Rahul"
 
 9. Error Handling
 
-I handled common issues like:
+Handled cases like:
 
 Invalid inputs
 
@@ -116,39 +114,33 @@ Out of stock
 
 Wrong query parameters
 
-So the API doesn’t crash and gives proper messages.
-
 🧠 What I Learned
 
-How FastAPI works (routes, endpoints)
+FastAPI routing and API design
 
-Using query parameters
+Query parameters and validation
 
-Data validation using Pydantic
+Pydantic models
 
 CRUD operations
 
-Writing clean API logic
+Search, sorting, pagination
 
-Handling real-world scenarios (search, sort, pagination)
-
-Basic backend architecture
+Backend logic handling
 
 🎯 Highlights
 
-Simple and clean code structure
+Clean and simple backend structure
 
-Built step-by-step (easy to understand)
+Step-by-step implementation
 
-Covers real-world API features
+Real-world API features
 
-Easy to test using Swagger UI
+Easy testing using Swagger UI
 
-Logic is reusable and maintainable
+Reusable and maintainable code
 
-👩‍💻 Author
+👨‍💻 Author
 
 Kalpesh Sarsambe
 FastAPI Internship Practice — IN226014802
-Assignments 1–5 completed
-
