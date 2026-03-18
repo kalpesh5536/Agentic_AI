@@ -6,17 +6,13 @@ I started with basic APIs and then slowly added more features like search, sorti
 
 ⚙️ Setup
 
-Install required packages:
+Install required packages: pip install fastapi uvicorn
 
-pip install fastapi uvicorn
+Activate virtual environment: venv\Scripts\activate
 
-Activate virtual environment:
+Run the server:  uvicorn main:app --reload
 
-venv\Scripts\activate
 
-Run the server:
-
-uvicorn main:app --reload
 📌 What I Built
 1. Product Management
 
@@ -156,4 +152,3 @@ Kalpesh Sarsambe
 FastAPI Internship Practice — IN226014802
 Assignments 1–5 completed
 
-⚠️
